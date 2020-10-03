@@ -42,8 +42,8 @@ body {
 }
 
 .container-lg {
-    width: 90%;
-    max-width: 140rem;
+    width: 100%;
+    max-width: 130rem;
 
 }
 
@@ -70,6 +70,10 @@ h2 {
     letter-spacing: .1rem;
     word-spacing: .2rem;
     margin: 1rem 0 3.5rem;
+}
+
+header {
+    min-height: 100vh;
 }
 
 /* BUTTONS */
@@ -149,7 +153,7 @@ nav {
 }
 
 .nav-item:not(:last-child) {
-    margin-right: 4rem;
+    margin-right: 1rem;
 }
 
 .nav-link {
@@ -194,7 +198,7 @@ nav {
 }
 
 .name {
-    font-size: 10rem;
+    font-size: 8rem;
     color: #ccd6f6;
     margin: 3rem 0 1rem;
 }
@@ -210,7 +214,7 @@ nav {
 }
 
 .intro-text {
-    margin: 2rem 0 4rem;
+    margin: 3rem 0 5rem;
 }
 
 /* ABOUT ME SECTION */
@@ -238,7 +242,7 @@ nav {
 }
 
 .about_image {
-    padding: 8rem 2rem 3rem;
+    padding: 0rem 2rem 3rem;
 }
 
 .about_image img {
@@ -272,13 +276,12 @@ nav {
 
 /* PROJECTS SECTION */
 
-.projects_row {
-    display: flex;
-    margin-bottom: 12rem;
-}
-
-.project_box {
-    flex: 1;
+.projects_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    width: 100%;
+    margin: 5rem 0 10rem;
 }
 
 .project_2 {
@@ -287,10 +290,6 @@ nav {
 
 .project_3 {
     margin-top: 10rem;
-}
-
-.project_box:not(:last-child) {
-    margin-right: 2.3rem;
 }
 
 .project_box > img {
@@ -358,6 +357,7 @@ footer {
     border-top: 1px solid #222941;
     display: flex;
     margin-top: 15rem;
+    padding: .5rem 0;
 }
 
 .footer_container-inner {
@@ -367,7 +367,7 @@ footer {
     height: 10rem;
 }
 
-.social_icons {
+.social_links {
     font-size: 1.8rem;
 }
 
@@ -382,3 +382,70 @@ footer {
 }
 
 /* Media Queries */
+
+@media screen and (max-width: 1000px) {
+    .project_box > img {
+        height: 15rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .name {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 2.7rem;
+        text-align: center;
+    }
+
+    .intro-box {
+        width: 100%;
+    }
+
+    .container-about {
+        flex-direction: column-reverse !important;
+    }
+
+    .about_image {
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+
+    .about_details p {
+        width: 100%;
+    }
+
+    .projects_grid {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .project_box > img {
+        height: initial;
+    }
+
+    .contact-container > p {
+        width: 100%;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    footer {
+        padding: 1rem 0;
+    }
+
+    .footer_container-inner {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .footer_container-inner p {
+        text-align: center;
+    }
+
+    .social_link {
+        margin-right: 2.5rem;
+    }
+}
