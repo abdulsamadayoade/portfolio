@@ -33,12 +33,12 @@ body {
 .container,
 .container-lg {
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 2.4rem;
 }
 
 .container {
     width: 100%;
-    max-width: 120rem;
+    max-width: 115rem;
 }
 
 .container-lg {
@@ -252,12 +252,16 @@ nav {
 }
 
 .stack {
-    list-style: none;
-    margin-top: 2rem;
+    display: flex;
+    font-size: 1.8rem;
+}
+
+.stack ul:first-child {
+    margin-right: 7rem;
 }
 
 .stack li {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.5rem;
 }
 
 .stack i {
@@ -271,6 +275,10 @@ nav {
 .projects_row {
     display: flex;
     margin-bottom: 12rem;
+}
+
+.project_box {
+    flex: 1;
 }
 
 .project_2 {
