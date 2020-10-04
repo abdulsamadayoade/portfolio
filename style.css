@@ -192,6 +192,7 @@ nav {
     position: absolute;
     top: 60%;
     transform: translateY(-60%);
+    padding-top: 3rem;
 }
 
 .greetings {
