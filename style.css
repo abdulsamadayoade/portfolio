@@ -73,7 +73,7 @@ h2 {
 }
 
 header {
-    min-height: 100vh;
+    height: 100vh;
 }
 
 /* BUTTONS */
@@ -187,8 +187,11 @@ nav {
 }
 
 /* HERO SECTION */
+
 .hero {
-    padding: 12rem 0 4rem;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-60%);
 }
 
 .greetings {
