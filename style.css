@@ -465,16 +465,20 @@ footer {
     }
 
     .name {
-        font-size: 5rem;
+        font-size: 3.5rem;
     }
 
     .title {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
     }
 
     h2 {
         font-size: 2.7rem;
         text-align: center;
+    }
+
+    p {
+        font-size: 1.6rem;
     }
 
     .intro-box {
@@ -492,6 +496,7 @@ footer {
 
     .about_details p {
         width: 100%;
+        text-align: left;
     }
 
     .projects_grid {
@@ -499,7 +504,7 @@ footer {
     }
 
     .project_box > img {
-        height: initial;
+        height: 20rem;
     }
 
     .contact-container > p {
