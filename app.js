@@ -27,3 +27,8 @@ myMenu.addEventListener('click', () => {
     myMenu.classList.toggle('show');
     myList.classList.toggle('show');
 });
+
+// SCROLL OUT
+ScrollOut({
+    targets: 'h2,p,a'
+})
