@@ -51,6 +51,18 @@ a {
     text-decoration: none;
 }
 
+.projects a,
+.contact a {
+    transform: translateX(5rem);
+    opacity: 0;
+}
+
+.projects a[data-scroll="in"],
+.contact a[data-scroll="in"] {
+    transform: translateX(0);
+    opacity: 1;
+}
+
 p {
     line-height: 1.5;
     font-size: 1.9rem;
