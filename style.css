@@ -273,6 +273,8 @@ nav.sticky {
     color: #ccd6f6;
     cursor: pointer;
     display: none;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out .5s forwards;
 }
 
 /* HERO SECTION */
@@ -509,6 +511,12 @@ footer {
         display: none;
     }
 
+    .menu-toggle.show {
+        position: fixed;
+        top: 2rem;
+        right: 2rem;
+    }
+
     .menu-toggle.show .fa-bars {
         display: none;
     }
@@ -580,6 +588,10 @@ footer {
 
     .projects_grid {
         grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .project_3 {
+        margin-top: 5rem;
     }
 
     .project_box > img {
