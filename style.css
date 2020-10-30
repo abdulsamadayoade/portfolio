@@ -399,6 +399,7 @@ p.intro-text {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
+    row-gap: 5rem;
     width: 100%;
     margin: 3rem 0 10rem;
 }
@@ -602,8 +603,8 @@ footer {
         grid-template-columns: repeat(1, 1fr) !important;
     }
 
-    .project_3 {
-        margin-top: 5rem;
+    .project_2, .project_3 {
+        margin-top: 0;
     }
 
     .project_box > img {
